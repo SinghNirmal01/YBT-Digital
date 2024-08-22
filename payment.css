@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #36B750, #36B192);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.center {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.center img {
+    max-width: 60%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.center img:hover {
+    transform: scale(1.05);
+}
+
+.upi-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.upi-container h2 {
+    margin: 10px 0;
+}
+
+.upi-container button {
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.upi-container button:hover {
+    background-color: #ff4500;
+    transform: scale(1.1);
+}
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.social-media li {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media li:hover {
+    transform: scale(1.1);
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2a2a42;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+}
+
+form input,
+form select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+form input[type="submit"] {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff4500;
+}
+
+.success-message {
+    display: none;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+}
+
+.how-to-buy {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2a2a42;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+}
+
+.how-to-buy h3 {
+    color: #fff;
+}
+
+input {
+    padding: 10px;
+}
+
+input:focus,
+input:hover {
+    outline: none;
+    border-color: rgba(129, 140, 248);
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}

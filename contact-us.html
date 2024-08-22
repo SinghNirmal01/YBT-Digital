@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>contact us</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      * {
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+      
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #CEF4FF;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+      }
+      
+      
+      
+      .contact {
+        padding: 2rem;
+        background-color: #fff;
+        margin: 2rem auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        max-width: 600px;
+      }
+      
+      .contact h2 {
+        margin-bottom: 1rem;
+      }
+      
+      .form-group {
+        margin-bottom: 1.5rem;
+        text-align: left;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+      
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 2px solid #495ECD;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #FFFFFF;
+        color: #333;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+      
+
+      .btn {
+        background-color: #2B60A6;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+        box-shadow: -5px -5px 8px #1A4680 inset;
+      }
+      
+      .btn:hover, .btn:active {
+        
+        box-shadow: 5px 5px 8px #1A4680 inset;
+      }
+      .full{
+        width:100vw;
+      }
+      input::placeholder {
+  color: #94a3b8;
+}
+
+input{
+  padding: 10px;
+}
+input:focus, input:hover {
+  outline: none;
+  border-color: rgba(129, 140, 248);
+  background-color: #fff;
+  box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}
+textarea:focus , textarea:hover{
+outline: none;
+  border-color: rgba(129, 140, 248);
+  background-color: #fff;
+  box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="hidden full">
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="logo">YourBrand</div>
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                </div>
+                <div class="nav-links">
+                    <a href="/">Contact</a>
+                </div>
+                <div class="nav-links">
+                    <a href="/#about">About</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact hidden">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/moqgganp" method="POST">
+            <div class="form-group hidden">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="form-group hidden">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group hidden">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn hidden">Send</button>
+        </form>
+    </section>
+
+    <footer class="hidden full">
+        <div class="footer-content ">
+            <div class="logo">YourBrand</div>
+            <div class="social-icons">
+                <a class="social-link" href="https://www.instagram.com/you_b_tech"><img class="social-icon" src="/assets/Instagram_icon.png" alt="Instagram"></a>
+                <a class="social-link" href="https://t.me/You_B_Tech_Coding"><img class="social-icon" src="/assets/1417108.png" alt="Telegram"></a>
+                <a class="social-link" href="mailto:bkc58746@gmail.com"><img class="social-icon" src="/assets/4672500.png" alt="Gmail"></a>
+            </div>
+        </div>
+        <p>&copy; 2024 YourBrand. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.to(".hidden", {
+                opacity: 1,
+                y: 0,
+                stagger: 0.25,
+                duration: 0.25,
+                rotateX: 0
+            });
+        });
+    </script>
+</body>
+
+</html>
