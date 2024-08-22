@@ -53,7 +53,10 @@
     </div>
 </div>
 
+<span class="hidden">Don't know how to buy
+  <a href="#help">check it</a>
 
+</span>
 
 <section>
     <ul class="social-media hidden">
@@ -93,11 +96,32 @@
 
 
 
-<div class="success-message" id="success-message">
-    Thank you for your order! We will process your payment and send you the product shortly.
+
+
+<div id="order-confirmation" class="order-confirmation">
+  <h2>Confirm Order</h2>
+  <p>You are just one step away from your amazing product!</p>
+  <p style="color:red;">make sure you make the payment otherwise your order will be cancelled </p>
+  <div class="order-details">
+    <p>Order Number: <strong>#123456</strong></p>
+    <p>Estimated Delivery: <strong>10-15 MIN</strong></p>
+  </div>
+  <button id="order-now" class="confirm-button">ORDER NOW</button>
 </div>
 
-<div class="how-to-buy hidden">
+<!-- 
+<div id="done">
+  <h1>hurray! your order has successfully placed</h1>
+  <p>
+    Thank you for your order! We will process your payment and send you the product shortly.
+    
+  </p>
+</div> -->
+
+
+
+
+<div id="help" class="how-to-buy hidden">
     <h3 class="hidden"><strong>How to Buy a Product?</strong></h3>
     <p class="hidden">1. Copy the given UPI and make payment through your payment app.</p>
     <p class="hidden">2. After making the payment and filling the form, the link to your product will be sent to the Gmail and social media ID provided, which may take 5 to 10 minutes.</p>
