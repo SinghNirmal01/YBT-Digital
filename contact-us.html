@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>contact us</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="root.css">
     <style>
       * {
         text-align: center;
@@ -18,7 +19,8 @@
       body {
         margin: 0;
         padding: 0;
-        background-color: #CEF4FF;
+        background-color: var(--bg-dark-gray);
+    
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -32,11 +34,14 @@
       .contact {
         padding: 2rem;
         background-color: #fff;
+        color: #000;
         margin: 2rem auto;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         width: 80%;
         max-width: 600px;
+        
+        l
       }
       
       .contact h2 {
@@ -51,7 +56,7 @@
       label {
         display: block;
         margin-bottom: 0.5rem;
-        color: #333;
+        color: ##fff;
       }
       
       input,
@@ -61,8 +66,9 @@
         border: 2px solid #495ECD;
         border-radius: 5px;
         box-sizing: border-box;
-        background-color: #FFFFFF;
+        background-color: #fff;
         color: #333;
+        
         font-family: 'Josefin Sans', sans-serif;
       }
       
@@ -75,7 +81,7 @@
         border-radius: 5px;
         cursor: pointer;
         font-size: 1rem;
-        transition: background-color 0.3s;
+        transition: all 0.3s;
         box-shadow: -5px -5px 8px #1A4680 inset;
       }
       
@@ -105,72 +111,112 @@ outline: none;
   background-color: #fff;
   box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
 }
+/* #contact Section */
+#contact {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--text-white);
+}
+
+#contact form {
+    margin: 20px auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact input[type="submit"] {
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #0056b3;
+}
 
     </style>
+
+
 </head>
 
 <body>
-    <header class="hidden full">
-        <!-- Navigation Bar -->
-        <nav>
-            <div class="logo">YourBrand</div>
-            <div class="nav-container">
-                <div class="nav-links">
-                    <a href="/">Home</a>
-                </div>
-                <div class="nav-links">
-                    <a href="/">Contact</a>
-                </div>
-                <div class="nav-links">
-                    <a href="/#about">About</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <section class="contact hidden">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/moqgganp" method="POST">
-            <div class="form-group hidden">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Username" required>
-            </div>
-            <div class="form-group hidden">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-            </div>
-            <div class="form-group hidden">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="btn hidden">Send</button>
-        </form>
-    </section>
-
-    <footer class="hidden full">
-        <div class="footer-content ">
-            <div class="logo">YourBrand</div>
-            <div class="social-icons">
-                <a class="social-link" href="https://www.instagram.com/you_b_tech"><img class="social-icon" src="/assets/Instagram_icon.png" alt="Instagram"></a>
-                <a class="social-link" href="https://t.me/You_B_Tech_Coding"><img class="social-icon" src="/assets/1417108.png" alt="Telegram"></a>
-                <a class="social-link" href="mailto:bkc58746@gmail.com"><img class="social-icon" src="/assets/4672500.png" alt="Gmail"></a>
-            </div>
+  <header class="hidden full">
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">YBT-Digital</div>
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="/">Home</a>
         </div>
-        <p>&copy; 2024 YourBrand. All rights reserved.</p>
-    </footer>
+        <div class="nav-links">
+          <a href="/">Contact</a>
+        </div>
+        <div class="nav-links">
+          <a href="/#about">About</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            gsap.to(".hidden", {
-                opacity: 1,
-                y: 0,
-                stagger: 0.25,
-                duration: 0.25,
-                rotateX: 0
-            });
-        });
-    </script>
+  <section class="contact hidden">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/moqgganp" method="POST">
+      <div class="form-group hidden">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+      </div>
+      <div class="form-group hidden">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group hidden">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn hidden">Send</button>
+    </form>
+  </section>
+
+  <footer class=" footer hidden full">
+    <div class="footer-content ">
+      <div class="logo">YBT-Digital</div>
+      <div class="social-icons">
+        <a class="social-link" href="https://www.instagram.com/you_b_tech"><img class="social-icon" src="/assets/Instagram_icon.png" alt="Instagram"></a>
+        <a class="social-link" href="https://t.me/You_B_Tech_Coding"><img class="social-icon" src="/assets/1417108.png" alt="Telegram"></a>
+        <a class="social-link" href="mailto:bkc58746@gmail.com"><img class="social-icon" src="/assets/4672500.png" alt="Gmail"></a>
+      </div>
+    </div>
+    <p>&copy; 2024 YBT-Digital. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.to(".hidden", {
+        opacity: 1,
+        y: 0,
+        stagger: 0.25,
+        duration: 0.25,
+        rotateX: 0
+      });
+    });
+  </script>
 </body>
 
 </html>

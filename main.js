@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         duration: 0.1,
         rotateX: 0
     });
+    
 });
 
 
