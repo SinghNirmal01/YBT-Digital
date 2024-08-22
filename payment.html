@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/payment.css">
+</head>
+<body>
+
+<header class="hidden">
+<!-- Navigation Bar -->
+    <nav>
+        <div class="logo">YBT-Digital</div>
+        <div class="nav-container">
+          <div class="nav-links">
+            <a href="/">Home</a>
+          </div>
+          <div class="nav-links">            <a href="/contact-us.html">Contact</a></div>
+          <div class="nav-links">            <a href="#about">About</a></div>
+        </div>
+    </nav>
+</header>
+
+<div class="code hidden">
+    <img src="assets/qr.jpg" alt="QR Code for Payment" style="max-width: 60%; height: auto;" class="hidden">
+</div>
+
+
+
+<div class="upi-container">
+
+
+  <div class="upi hidden">
+<span id="upi" class="upi-id ">brajendrayoubtech062@fam</span>
+    <button onclick="copyText()">
+      
+      
+      
+      
+<svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' fill='#000' opacity='0'/>
+
+
+<g transform="matrix(0.8 0 0 0.8 12 12)" >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: #fff; fill-rule: nonzero; opacity: 1;" transform=" translate(-15, -14.5)" d="M 11 2 C 9.895 2 9 2.895 9 4 L 9 20 C 9 21.105 9.895 22 11 22 L 24 22 C 25.105 22 26 21.105 26 20 L 26 8.5 C 26 8.235 25.895031 7.9809687 25.707031 7.7929688 L 20.207031 2.2929688 C 20.019031 2.1049687 19.765 2 19.5 2 L 11 2 z M 19 3.9042969 L 24.095703 9 L 20 9 C 19.448 9 19 8.552 19 8 L 19 3.9042969 z M 6 7 C 4.895 7 4 7.895 4 9 L 4 25 C 4 26.105 4.895 27 6 27 L 19 27 C 20.105 27 21 26.105 21 25 L 21 24 L 11 24 C 8.794 24 7 22.206 7 20 L 7 7 L 6 7 z" stroke-linecap="round" />
+</g>
+</svg>
+
+
+    </button>
+    </div>
+</div>
+
+
+
+<section>
+    <ul class="social-media hidden">
+        <li><a href="#" class="social-icon hidden"><img src="assets/phonepay.png" alt="PhonePe"></a></li>
+        <li><a href="#" class="social-icon hidden"><img src="assets/1713065209603.png" alt="Twitter"></a></li>
+        <li><a href="#" class="social-icon hidden"><img src="assets/paytm.png" alt="Paytm"></a></li>
+        <!-- Add more social media icons as needed -->
+    </ul>
+</section>
+
+
+
+<form id="contact-form" class="hidden">
+  <div class="group hidden">
+    <label for="fullname" >Full Name</label>
+    <input type="text" id="fullname" name="fullname" required>
+</div>
+  <div class="group hidden">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+</div>
+  <div class="group hidden">
+    <label for="social_media">Social Media ID (Instagram or Telegram)</label>
+    <input type="text" id="social_media" name="social_media">
+</div>
+  <div class="group hidden">
+    <label for="product">Select Product</label>
+    <select id="product" name="product">
+        <option value="ChatGPT Proptms EBook">ChatGPT Proptms EBook</option>
+       
+    </select>
+    </div>
+
+    <input class="submit hidden" type="submit" value="Submit">
+</form>
+
+
+
+
+<div class="success-message" id="success-message">
+    Thank you for your order! We will process your payment and send you the product shortly.
+</div>
+
+<div class="how-to-buy hidden">
+    <h3 class="hidden"><strong>How to Buy a Product?</strong></h3>
+    <p class="hidden">1. Copy the given UPI and make payment through your payment app.</p>
+    <p class="hidden">2. After making the payment and filling the form, the link to your product will be sent to the Gmail and social media ID provided, which may take 5 to 10 minutes.</p>
+    <p class="hidden">3. If you need assistance, you can contact us through social media or by filling out the contact form on this website.</p>
+</div>
+
+<footer class="hidden">
+        <div class="footer-content hidden">
+            <div class="logo">YBT-Digital</div>
+            <div class="social-icons">
+        <a class="social-link" href="https://www.instagram.com/you_b_tech"><img class="social-icon" src="/assets/Instagram_icon.png" alt="Instagram"></a>
+        <a class="social-link" href="https://t.me/You_B_Tech_Coding"><img class="social-icon" src="/assets/1417108.png" alt="Telegram"></a>
+        <a class="social-link" href="mailto:bkc58746@gmail.com"><img class="social-icon" src="/assets/4672500.png" alt="Gmail"></a>
+            </div>
+        </div>
+        <p>&copy; 2024 YBT-Digital. All rights reserved.</p>
+    </footer>
+    
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="/payment.js">/payment.js</script>
+</body>
+</html>
