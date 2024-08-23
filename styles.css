@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--bg-dark-gray);
-    color: var(--text-white);
+    color: black;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -184,12 +184,20 @@ p {
 /* Admin Section */
 .admin-card {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 100px auto;
     padding: 20px;
     background-color: var(--text-white);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
     border-radius: 10px;
     text-align: center;
+    transition-duration: 250ms;
+
+}
+  .admin-card:hover{
+  box-shadow: -5px -5px 8px #777 inset, 
+              5px 5px 8px #999 inset;
+  scale: 1.1;
+  translate:0px -50px;
 }
 
 .admin-card img {
