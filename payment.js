@@ -24,10 +24,20 @@ setTimeout(()=>{
     });
 }
 let formData;
+let orderId;
 document.getElementById('contact-form').addEventListener('submit', function(event) {
   event.preventDefault();
    formData = new FormData(this);
-document.getElementById('order-confirmation').style.display = 'block';
+document.getElementById('order-confirmation-container').style.display = 'block';
+
+
+
+orderId = Math.floor(Math.random()*99999)
+document.querySelector('#order-id').innerHTML =` Order Number: <strong>#${orderId}</strong>`
+
+
+
+
 });
 
 document.getElementById('order-now').addEventListener('click', function() {
@@ -40,11 +50,9 @@ document.getElementById('order-now').addEventListener('click', function() {
   }).then(function(text) {
     if (text === 'Success') {
       // Hide the contact form
-     
-alert('Your order has been placed successfully!');
+     document.querySelector('#success-container').style.display = 'block'
+     document.getElementById('order-confirmation').style.display = 'none';
 
-      // Show the order confirmation
-      
     } else {
       alert('Something went wrong. Please try again.');
     }

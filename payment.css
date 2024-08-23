@@ -202,7 +202,7 @@ select:focus{
 }
 
 .order-confirmation {
-  display: none;
+  
     background-color: #f9f9f9;
     color: #333;
     padding: 20px;
@@ -276,4 +276,41 @@ select:focus{
     60% {
         transform: translateY(-10px);
     }
+}
+
+
+
+#success-container,#order-confirmation-container{
+  width: 100vw;
+  height: 100dvh;
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  z-index:100;
+  top:50%;
+  left:50%;
+  translate: -50% -50%;
+  display:none;
+}
+
+.success{
+  width: 80%;
+  height:40dvh;
+  padding: 16px;
+  border-radius:16px;
+  background: #28A745;
+  position: absolute;
+  left:50%;
+  top:50%;
+  translate:-50% -50%;
+  box-shadow: 0px 0px 8px #777;
+  transition-duration: 500ms;
+}
+.success a{
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #2950B1;
+}
+.success:hover{
+box-shadow: -10px -10px 8px #1E8335  inset;
+translate: -50% -60%;
 }
