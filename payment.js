@@ -49,9 +49,7 @@ document.getElementById('order-now').addEventListener('click', function() {
     return response.text();
   }).then(function(text) {
     if (text === 'Success') {
-      // Hide the contact form
-     document.querySelector('#success-container').style.display = 'block'
-     document.getElementById('order-confirmation').style.display = 'none';
+    window.location.href = 'success.html';
 
     } else {
       alert('Something went wrong. Please try again.');
@@ -59,8 +57,6 @@ document.getElementById('order-now').addEventListener('click', function() {
   }).catch(function(error) {
     alert('Error: ' + error);
   });
-  // Process the order here
+
   
-  // Optionally, you can redirect the user to a different page or reset the UI
-  // window.location.href = 'order-success.html';
 });
