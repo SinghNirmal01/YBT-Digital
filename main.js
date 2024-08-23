@@ -47,6 +47,3 @@ gallery.addEventListener('touchstart', () => {
 gallery.addEventListener('touchend', () => {
     gallery.style.animationPlayState = 'running';
 });
-gallery.addEventListener('click', () => {
-    gallery.style.animationPlayState = 'paused';
-});
