@@ -1,3 +1,7 @@
+*{
+  font-family: "Poppins", sans;
+}
+
 :root {
     --bg-dark-gray: #2E2E2E;
     --primary-blue: #007BFF;
